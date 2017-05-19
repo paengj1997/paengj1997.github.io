@@ -1,12 +1,28 @@
 
 @import url('https://fonts.googleapis.com/css?family=Sansita');
+body {
+    font-family: 'helvetica';
+    font-size: 1.1em;
+}
 
-body { font-family: 'helvetica' ; font-size: 1.1em;}
-h1,h2,h3,h4,h5,h6 {font-family: 'Sansita'}
-header,footer {background-color: #A6D8DB}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Sansita'
+}
+
+header,
+footer {
+    background-color: #A6D8DB
+}
+
 nav a:link {
     text-decoration: none;
     color: #47556F;
-    background-color: #F07C6C 
+    background-color: #F07C6C
 }
-main {background-image: url("/sunny-winter.jpg");
+main{background-image: url("images/sunny-winter.jpg");
+    background-size: cover;}
