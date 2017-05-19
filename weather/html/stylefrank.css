@@ -9,5 +9,5 @@ nav a:link {
     color: #47556F;
     background-color: #F07C6C 
 }
-body {background-image: url("sunny-winter.jpg");
+main {background-image: url("sunny-winter.jpg");
     background-size: cover;}
