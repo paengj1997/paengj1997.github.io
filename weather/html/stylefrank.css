@@ -73,9 +73,11 @@ nav ul {
 nav ul li {margin-right: 10px; }
 nav {
     position: relative;
+    bottom: 0;
     left: 0;
     right: 0;
     font-size: 20px; 
+    float: bottom; 
 }
 nav a: link {
     text-decoration: none;
@@ -94,3 +96,18 @@ h1 {
 padding: 1em;}
 #temp {text-align: center;}
 #highlow {text-align: center;}
+
+/* this uses for the large wirefram the media screen */ 
+
+@media screen and (min-width: 700px) {
+    
+    #temperature { width: 500 px;
+    height: 200px ;
+    margin: 70px;
+}
+    nav { float: top;  }
+
+}
+        
+
+
