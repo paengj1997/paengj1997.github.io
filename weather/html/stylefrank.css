@@ -16,7 +16,7 @@ h6 {
 
 header,
 footer {
-    background-color: #A6D8DB
+    background-color: #A6D8DB;
 }
 
 nav a:link {
@@ -24,5 +24,73 @@ nav a:link {
     color: #47556F;
     background-color: #F07C6C
 }
-main{background-image: url("images/sunny-winter.jpg");
-    background-size: cover;}
+
+
+#current{background-color: rgba(200,200,200,.6);
+margin: .2em auto;
+border: 1px solid;
+    border-radius: 5px;}
+
+*{
+ box-sizing: border-box;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+ display: block; 
+}
+
+body {
+ margin: 0; /* remove any margin from body */
+ padding: 0; /* ditto for padding */
+ background-color: salmon;
+}
+
+#box {background-color: rgba(200,200,200,.6);
+margin: .2em auto;
+border: 1px solid;
+    border-radius: 5px;}
+main {
+ display: flex;
+ flex-flow: column nowrap;
+ align-items: center;
+    background-image: url("/images/sunny-winter.jpg");
+    background-size: cover;
+}
+nav ul {
+ display: flex;
+    font-size: 14px;
+       list-style-type: none;
+    height: 2px;
+}
+nav ul li {margin-right: 10px; }
+nav {
+    position: relative;
+    left: 0;
+    right: 0;
+    font-size: 20px; 
+}
+nav a: link {
+    text-decoration: none;
+    color: #47556F;}
+
+ul{ padding: 0;}
+
+h1 {
+    text-align: right;
+}
+.title h1 + h3 {
+    text-align: right;
+}
+#hourly {visibility: hidden;}
+#footer{text-align: center;
+padding: 1em;}
+#temp {text-align: center;}
+#highlow {text-align: center;}
