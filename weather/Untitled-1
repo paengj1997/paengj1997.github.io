@@ -6,7 +6,7 @@
     <title>Franklin, ID | Weather </title>
     <meta name="Franklin Weather Site Plan" content="This page broadcasts the weather over the Franklin area">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="stylefrank.css">
+    <link rel="stylesheet" type="text/css" href="franklin_layout.css">
 
 </head>
 
@@ -27,8 +27,8 @@
         </ul>
     </nav>
     <main>
-       
-        <section class="frank">
+        <!--<div class="body">-->
+        <section class="overview">
             <h2>Franklin, ID</h2>
             <section class="location">
                 <h2>69 &#9900;</h2>
@@ -40,7 +40,7 @@
         </section>
 
 
-        <section class="current">
+        <section class="cur_conditions">
             <h2>Current Conditions</h2>
             <div>
                 <p><b>Wind: </b> 1 - 5 MPH Southwest</p>
@@ -59,10 +59,11 @@
                 <li>6:00 AM : 69</li>
             </ul>
         </section>
+        <!--</div>-->
 
     </main>
     <footer>
-        &copy; 2017 Peeraya Chamnankit
+        &copy; 2017 Maxwell Acquah
     </footer>
 </body>
 
