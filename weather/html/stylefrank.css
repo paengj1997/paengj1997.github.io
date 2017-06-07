@@ -16,6 +16,7 @@ figure {
     display: block;
  
 }
+#pic { border-radius: -80px; }
 
 h1,
 h2,
@@ -40,7 +41,7 @@ main {
     flex-flow: column nowrap;
     align-items: center;
     padding: 0;
-    background-image: src = https://cdn.pixabay.com/photo/2016/05/10/21/00/winter-1384661_960_720.jpg;
+    background-image: src = "https://cdn3.iconfinder.com/data/icons/weather-and-forecast/51/Weather_icons_grey-03-512.png";
     background-size: cover;
 }
 
@@ -145,7 +146,7 @@ footer {
         padding-bottom: 0;
     }
     main {
-        background-image: src = https://cdn.pixabay.com/photo/2016/05/10/21/00/winter-1384661_960_720.jpg;
+        background-image: url("/images/sunny-winter.jpg");
         background-size:auto;
         display: flex;
         flex-flow: row nowrap;
