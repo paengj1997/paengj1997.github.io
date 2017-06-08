@@ -16,7 +16,6 @@ figure {
     display: block;
  
 }
-#pic { border-radius: -80px; }
 
 h1,
 h2,
@@ -41,7 +40,7 @@ main {
     flex-flow: column nowrap;
     align-items: center;
     padding: 0;
-    background-image: src = "https://cdn3.iconfinder.com/data/icons/weather-and-forecast/51/Weather_icons_grey-03-512.png";
+    background-image: url("/images/Dronestagram-1%20(1).jpg");
     background-size: cover;
 }
 
@@ -146,7 +145,7 @@ footer {
         padding-bottom: 0;
     }
     main {
-        background-image: url("/images/sunny-winter.jpg");
+        background-image: url("/images/Dronestagram-1%20(1).jpg");
         background-size:auto;
         display: flex;
         flex-flow: row nowrap;
