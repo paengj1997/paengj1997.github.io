@@ -208,7 +208,7 @@ footer {
         list-style-type: none;
     }
     nav {
-        position: fixed;
+       position: static;
         bottom: 503px;
         left: 0;
         right: 0;
