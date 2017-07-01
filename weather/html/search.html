@@ -1,47 +1,66 @@
+
 <!DOCTYPE HTML>
-<html>
-<header>
-        <div class="title">
-            <h1><span>&#9856;</span><span class="rotate25">&#9861;</span> Feeling Lucky?</h1>
-            <h1>Local Weather</h1>
-        </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="#">Franklin</a></li>
-            <li><a href="Greenvile.html">Greenville</a></li>
-            <li><a href="#">Springfield</a></li>
-            <li><a href="#">Search</a></li>
-        </ul>
-    </nav>
-    <link rel="stylesheet" type="text/css" href="stylefrank.css" media="screen">
-     <section id="searchResults">
-        <h2>Search Results</h2>
-    </section>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Search</title>
+        <link rel="stylesheet" type="text/css" href="stylefrank.css" media="screen">
+    </head>
+    <!-- *********************************************
+* Who Did You Collaborate With On This Activity?
+* 1.Brandy Anninos
+* 2. Ryan Call
+* 3. Jesse Hillman
+* 4.
+* 5.
+* ******************************************** -->
+     <nav id="page-nav">
+            <ul class="flexlist">
+                <li><a href="home.html" title="Current Weather">Home</a></li>
+                <li><a href="franklin.html" title="Weather in Franklin, ID">Franklin</a></li>
+                <li><a href="Greenvile.html" title="Weather in Greenville, SC">Greenville</a></li>
+                <li><a href="#" title="Weather in Springfield, IL">Springfield</a></li>
+                 <li><a href="search.html">Search</a></li>
+            </ul>
+        </nav>
+     <h2>Weather Search</h2>
+    <body>
+        <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
 
-<body>
+            <input type="search" name="query" id="query">
+            <input type="submit" name="submit" value="find" id="send">
+        </form>
+         <section id="searchResults">
+                <h2>Search Results</h2>
+            </section>
+    
+        <main id="page-main">
+            <section class="weather-container">
+                <h1 id="cityDisplay"></h1>
 
-    <form method="get" action="//autocomplete.wunderground.com/aq" id="searchform">
-        <input type="search" name="query" id="query">
-        <input type="submit" name="submit" value="Search" id="send">
-    </form>
+                <ul id="current_conditions">
+                    <li id="currentTemp"></li>
+                    <li id="summary"></li>
+                    <li id="add1"></li>
+                    <li id="add2"></li>
+                    <li id="add3"></li>
 
-    <script
-            src="https://code.jquery.com/jquery-3.2.1.js"
-            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-            crossorigin="anonymous"></script>
-    <script src="../../Archive-2/jsonweather-html/scripts/jquery-3.0.0.min.js"></script>
+                </ul>
+            </section>
+        
+        </main>
 
-    <script src="search.js"></script>
+        <footer id="page-footer">
+            <ul class="flexlist">
+                <li>Weather Center 2010 - 2016</li>
+                <li><img src="../../Archive-2/jsonweather-html/images/wulogo.png" alt="Weatherunderground logo" title="All weather data provided by WeatherUnderground.com"></li>
+                <li><small>Last updated: June 29, 2017 </small></li>
+            </ul>
+        </footer>
 
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="search.js"></script>
 
-
-
-
-
-</body>
-    <footer>
-    </footer>
+    </body>
 </html>
 
