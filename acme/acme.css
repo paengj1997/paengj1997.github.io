@@ -68,8 +68,7 @@ display: flex;
     	list-style: none;
 }
 .logo{
-	width: 50%;
-	height: 5%;
+	width: 90%;
     
 }
 
@@ -188,15 +187,6 @@ figure {
     clear: left;
 }
 
-.left_article {
-    background-color: #FFFFFF;
-    width: 60%;
-    float: left;
-    font-family:'Fresca', sans-serif;
-    color: #343434;
-    padding-bottom: 15px;
-}
-
 .noDisplay {
     display: none;
 }
@@ -309,4 +299,8 @@ rocket-list li {
 	background-color: rgba(220, 220, 220, .6);
 	width: 55%;
     list-style-type: none;
+}
+.logo{
+	width: 50%;
+    
 }
