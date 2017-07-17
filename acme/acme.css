@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 #body{  
-	background-image: url(/images/site/background.jpg);
+	background-image: url(../../paengj1997.github.io/acme/images/site/background.jpg)
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family:'Permanent Marker', cursive;
@@ -60,7 +60,7 @@
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: flex-start;
-	background-image: url("../acme/images/site/feature.jpg")
+	background-image: url("../../paengj1997.github.io/acme/images/site/feature.jpg")
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #de2226;
@@ -98,11 +98,6 @@
 .article {
     display: flex;
     flex-flow: row wrap;
-}
-
-#recipes {
-    /*width: 500px;*/
-
 }
 
 #recipes h3 {
