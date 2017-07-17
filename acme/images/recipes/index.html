@@ -7,52 +7,44 @@
     <meta name="ACME website" content="It is not a real website. It was made for CIT 230 project">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ACME Project</title>
-    <link href="acme.css" rel="stylesheet" type="text/css">
+    <link href="acmee.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
 </head>
 
 <body id="body">
-       <header id="code">
-            <script src="js/code.js"></script>
+    <div class="container">
+        <header id="pageheader">
+            <!--    //javascript goes here-->
+            <script src="js/acme.js"></script>
         </header>
-        
-<div class="container">
-     
-        <div class = pageheader>
+        <div class="topheader">
             <img id="logo" src="images/site/logo.png" alt="acme logo">
         </div>
-        
-        
         <nav id="nav">
             <noscript id="noscript">Enable JavaScript for this site to function.</noscript>
             <ul>
                 <!--                <li><a href="#" title="Home">Home</a></li>-->
             </ul>
         </nav>
-        
-        
 
-        <main id = main>
+        <main id="page">
 
             <section id="home-content">
                 <section class="content">
-                    <h1 id="d">Welcome to Acme!</h1>
-                    
-                    <section id="hero">
-				<ul>
-					<li>
-						<h2>Acme Rocket</h2>
-					</li>
-					<li>Quick lighting fuse</li>
-					<li>NHTSA approved seat belts</li>
-					<li>Mobile launch stand included</li>
-					<li>
-						<a href="#"><img id="actionbtn" alt="Add to cart button" src="images/site/iwantit.gif"></a>
-					</li>
-				</ul>
-			</section>
-                    
+                    <h1 id="welcome">Welcome to Acme!</h1>
+                    <section class="main-picture">
+
+                        <section class="rocket">
+                            <h3 id="rocket-header">Acme Rocket</h3>
+                            <ul class="rocket-list">
+                                <li>Quick lighting fuse.</li>
+                                <li>NHTSA approved seat belts.</li>
+                                <li>Mobile launch stand included.</li>
+                            </ul>
+                            <img src="images/site/iwantit.gif" class="logo" alt="I want it button">
+                        </section>
+                    </section>
                 </section>
 
                 <section class="article">
@@ -113,5 +105,3 @@
 </body>
 
 </html>
-
-     

@@ -1,87 +1,141 @@
+/* This is  my main CSS file */
 
-body { 
-    background-image: url("/images/site/background.jpg");
+@import url('https://fonts.googleapis.com/css?family=Chelsea+Market');
+* {
+	box-sizing: border-box;
 }
 
-nav {
-    background-color: #de2226;
-    height: 50px;
-    width: 80%;
+#body{  
+	background-image: url(../images/site/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Chelsea Market', cursive;
+	font-size: 20px;
+	width: 95%;
 }
 
-#navbar {
-    list-style: none;
-    display:flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    padding: 0px;
+#main{
+    display: flex;
+	flex-direction: column;
+	background-color: white;
 }
 
-#navbar li {
-    margin: 5px;
+.pageheader{
+	background-color: #ffffff;
+	background-size: contain;
+	height: 120px;
+	background-repeat: no-repeat;
 }
 
-#navbar li a {
-    text-decoration: none;
-    color: #fff;
+#nav{
+	display: flex;
+	background-color: #de2226;
 }
 
-#navbar li:hover {
-    background-color: #903;
+#nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style: none;
+	flex-grow: 1;
+	padding: 0;
+	font-size: 12px;
+	font-weight: bold;
 }
 
-#navbar li:active {
-    background-color: #903;
+#nav a{
+	color: #ffffff;
+	text-decoration: none;
 }
-#other-content {
- }
-#other-content-2 {
- }
+
+#nav a:hover {
+	color: #0000ee;
+}
+
+#d {
+	padding-left: 10px;
+	display: flex;
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+#hero {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-start;
+	background-image: url("../acme/images/site/feature.jpg")
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #de2226;
+}
+
+#hero ul {
+	list-style: none;
+	font-size: 10px;
+	padding: 0;
+	padding-left: 10px;
+	font-weight: bold;
+	margin: 0;
+	background-color: rgba(220, 220, 220, .6);
+	width: 55%;
+}
+
+#hero img {
+	width: 70%;
+	height: auto;
+}
+
+#featured {
+    margin-left: 16px;
+}
+
+#reviews {
+    width: 370px;
+}
+
+#reviews h3 {
+    margin-top: -14px;
+    margin-bottom: -10px;
+}
+
+.article {
+    display: flex;
+    flex-flow: row wrap;
+}
 
 #recipes {
-    display: flex;
-    flex-wrap: wrap;
-    width: 25%;
+    /*width: 500px;*/
+
 }
 
-#recipe-content {display: -webkit-flex; /* Safari */
-    -webkit-flex-direction: row; /* Safari 6.1+ */
+#recipes h3 {
+    margin: 5px 0 -5px 0;
+}
+
+#recipe-content {
     display: flex;
-    flex-direction: row; 
+    flex-flow: row wrap;
     list-style: none;
-flex-grow: 1;
-}
-#pershkrimi-produktit {
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: 20%;
-    list-style: none;
-    padding-left: 34%;
-}
-#zhvillim-produkti {
-    display: flex;
-    flex-direction: column;
+    /*    flex-grow: 1;*/
+    width: 25em;
 }
 
-#list1 {
-		 margin-left:-40px; margin-top:10px;
+.food {
+    border-left-width: 20px;
+    border-right-width: 20px;
+    border-bottom-width: 4px;
+    border-color: lightgray;
+    border-style: solid;
+    width: 5em;
 }
 
-#list2 {
-	margin:10px;
+figure {
+    width: 30%;
+    text-align: center;
+    margin: 8px;
 }
 
-#list3 {
-	margin:10px;
-}
-
-#list4 {
-	margin:10px;
-}
-
-#emri-produktit {
-
-}
 .container {
     background-color: #FFFFFF;
     width: 90%;
@@ -102,7 +156,6 @@ flex-grow: 1;
     clear: left;
 }
 
-
 .left_article {
     background-color: #FFFFFF;
     width: 60%;
@@ -111,9 +164,11 @@ flex-grow: 1;
     color: #343434;
     padding-bottom: 15px;
 }
+
 .noDisplay {
     display: none;
 }
+
 .container .left_article h1 {
     padding-left: 5%;
     padding-right: 5%;
@@ -123,36 +178,68 @@ flex-grow: 1;
     text-transform: uppercase;
 }
 
-
 .right_article {
     width: 40%;
     float: left;
     background-color: #ffffff;
 }
-.footer {
-    background-color: #FFFFFF;
+
+#product-content {
+    display: flex;
 }
-.placeholder {
-    /* [disabled]max-width: 400px;
-*/
-    /* [disabled]max-height: 200px;
-*/
-    
-    width: 100%;
-    padding-top: 30px;
-    /* [disabled]padding-left: 19px;
-*/
-    
-    padding-bottom: 30px;
-    height: 100%;
+
+#prod-description {
+    height: 300px;
+    background-repeat: no-repeat;
+    list-style: none;
+    justify-content: flex-end;
+    margin-left: 8%;
+    padding-right: 8%
 }
+
+#product-zone {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+}
+
+#product-content h1 {
+    font-size: 40px;
+}
+
+#prod-image {
+    height: 500px;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 33%;
+}
+
+#page-footer {
+    background-color: #fff;
+    color: #000000;
+    padding: 0 .5em;
+    margin-bottom: 2.5em;
+    font-size: 12px;
+    text-align: center;
+}
+
+#page-footer p {
+    margin: 0;
+}
+
+noscript {
+    color: #fff;
+}
+
 .column_title {
     padding-top: 25px;
     padding-bottom: 25px;
 }
+
 .copyright {
     text-align: center;
-    background-color: #ff0000;
+    background-color: #990033;
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: lighter;
@@ -160,113 +247,87 @@ flex-grow: 1;
     border-top-width: 2px;
     font-family: "Source Sans Pro";
 }
-@media (max-width: 1000px) {
-    .secondary_header ul li {
-        float: none;
-        margin-top: 28px;
-        margin-left: 0px;
-        width: 100%;
-    }
-    .left_article {
-        width: 100%;
-        height: auto;
-    }
-    .right_article {
-        width: 100%;
-        height: auto;
-    }
-    .copyright {
-        padding-top: 25px;
-        padding-bottom: 2px;
-        margin-bottom: 2px;
-    }
-    .container .secondary_header {}
-}
-@media (min-width: 321px) and (max-width: 768px) {
-    .secondary_header ul li {
-        float: none;
-        margin-top: 28px;
-        margin-left: 0px;
-        width: 100%;
-    }
-       .left_article {
-        width: 100%;
-        height: auto;
-    }
-    .right_article {
-        width: 100%;
-        height: auto;
-        padding-bottom: 25px;
-    }
-    
-}
-@media only screen and (min-width: 500px){
-    #tablet{display: flex; width: 30em;}
-    }
 
-@media only screen and (min-width: 1024px){
-        #desktop{display: flex; width: 40em;}
-}
-.atributet-flex {
-  height: 300px;
-  display: -webkit-flex;
-  display:         flex;
-  height: 10px;
-  line-height:10px;
-  -webkit-align-items: center;
-          align-items: center;
-  -webkit-justify-content: center;
-          justify-content: center;
 }
 
+/**************************/
 
-@media (min-width: 769px) and (max-width: 1000px) {
-    .secondary_header {
-        overflow: auto;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .secondary_header ul li {
-        margin-top: 10px;
-        margin-right: 7%;
-        margin-bottom: 10px;
-        margin-left: 7%;
-    }
-    .left_article {
-        height: auto;
-		
-    }
-    .right_article {
-        height: auto;
-        padding-bottom: 27px;
-    }
-    .placeholder {
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .columns {
-        width: 50%;
-        float: left;
-        padding-left: 0px;
-        padding-top: 0px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-    }
-    .container .columns p {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
+
+/*for laptop screens*/
+
+@media only screen and (min-width: 750px) {
+	footer {
+		font-size: 30px;
+	}
+    #body{
+		width: 98%
+	}
+	#contentTitle {
+		font-size: 30px;
+		padding: 5px;
+		padding-left: 15px;
+	}
+    #nav {
+		font-size: 20px;
+	}
+    #nav a {
+		display: flex;
+		font-size: 20px;
+	}
+	#hero {
+		flex-direction: row;
+		height: 480px;
+		justify-content: flex-end;
+		background-image: url(../images/site/feature.jpg);
+		background-size: cover;
+	}
+	#hero ul {
+		font-size: 40px;
+		width: 55%;
+		height: 100%;
+	}
+	#hero img {
+		width: 50%;
+		height: auto;
+	}
+	#infoWrapper {
+		display: flex;
+		flex-direction: row;
+	}
+	#featuredRecipies {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 50px;
+	}
+	#featuredRecipies img {
+		width: 40%;
+		height: auto;
+	}
+	#featuredRecipies a {
+		font-size: 20px;
+	}
+	#rocketReviews {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		justify-content: center;
+	}
+	#productImg {
+		display: flex;
+		justify-content: center;
+		padding-top: 15px;
+	}
+	#productImg img {
+		width: auto;
+		height: 70%;
+	}
+	#productInfo {
+		font-size: 35px;
+	}
+
+	#price{
+		font-size: 35px;
+	}
 }
-@media (min-width: 1001px) {} .thumbnail {
-    width: 100px;
-    border-radius: 200px;
-    height: 100px;
-    margin-left: auto;
-}
-.thumbnail_align {
-    text-align: center;
-}
-#menu {}
