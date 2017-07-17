@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Fresca');
 
 #body {
     display: flex;
@@ -6,13 +6,13 @@
     background-image: url('images/site/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Chelsea Market', cursive;
+    font-family:'Fresca', sans-serif;
 }
 
 #page {
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Chelsea Market', cursive;
+    font-family:  'Fresca', sans-serif;
     font-size: 15px;
     width: 95%;
 }
@@ -173,7 +173,7 @@ figure {
     background-color: #FFFFFF;
     width: 60%;
     float: left;
-    font-family: "Source Sans Pro";
+    font-family:'Fresca', sans-serif;
     color: #343434;
     padding-bottom: 15px;
 }
@@ -253,7 +253,7 @@ noscript {
     font-weight: lighter;
     letter-spacing: 2px;
     border-top-width: 2px;
-    font-family: "Source Sans Pro";
+    font-family:  'Fresca', sans-serif;
 }
 
 
