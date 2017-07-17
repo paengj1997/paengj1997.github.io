@@ -46,9 +46,10 @@ $(document).ready(function () {
             console.log(reviews);
 
             $("title").text("ACME " + pageName);
-            $("#prodtitle").html(name);
-            $("#product-name").text(name);
-             $("#product-image").html("<img src=" + path + ">");
+            $("#produect_title").html(name);
+            $("#product_name").text(name);
+//           $("#product_image").html("background-image", "url(" + path + ")");
+            $("#product_image").html("<img src=" + path + ">");
             var output = '';
             output += "<li>" + description + "</li> <br>";
             output += '<li><strong>Made by: </strong>' + manufacturer + '</li>' + '<br>';
