@@ -2,7 +2,6 @@
 
 #body {
     display: flex;
-    /*    font-size: 18px;*/
     background-image: url('images/site/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,42 +16,59 @@
     width: 95%;
 }
 
-#welcome {
-    margin-left: 16px;
+#acmewel {
+ font-size: 25px;
+	padding: 0;
+	padding-left: 10px;
+	font-weight: bold;
+	margin: 0;
+	width: 55%;
 }
 
 .content {
     width: auto;
 }
 
-.main-picture {
+.picrock {
     background-image: url('images/site/feature.jpg');
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #990033;
-    padding-right: 0;
-    margin-left: 1%;
+display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-start;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #de2226;
 }
 
-.main-picture img {
-    max-width: 10em;
-    ;
-}
-
-#rocket-header {
-    font-size: 15px;
+#acmerocket {
+    font-size:30px;
+	padding: 0;
+	padding-left: 10px;
+	font-weight: bold;
+	margin: 0;
+	background-color: rgba(220, 220, 220, .6);
+	width: 55%;
+    list-style-type: none;
 }
 
 .rocket-list {
-    font-size: 12px;
-    list-style: none;
-    padding-left: 0;
+ font-size: 12px;
+	padding: 0;
+	padding-left: 10px;
+	font-weight: bold;
+	margin: 0;
+	background-color: rgba(220, 220, 220, .6);
+	width: 55%;
+    list-style-type: none;
 }
-
+.rocket_list:first-child {
+    	list-style: none;
+}
+.logo{
+	width: 50%;
+	height: 5%;
+    
+}
 
 #nav {
     background-color: #de2226;
@@ -106,11 +122,11 @@
     margin: 0 auto;
 }
 
-#reviews {
+#acmeReviews {
     width: 370px;
 }
 
-#reviews h3 {
+#acmeReviews h3 {
     margin-top: -14px;
     margin-bottom: -10px;
 }
@@ -257,7 +273,6 @@ noscript {
 }
 
 
-/*Large Screen*/
 @media screen and (min-width:750px) {
 
 }
@@ -269,7 +284,26 @@ rocket-list li {
     display: flex;
     font-size: 14px;
 }
-.main picture img {
+.picrock img{
     height: 5em;
 }
+#acmerocket {
+    font-size:18px;
+	padding: 0;
+	font-weight: bold;
+	margin: 0;
+	background-color: rgba(220, 220, 220, .6);
+	width: 55%;
+    list-style-type: none;
+}
 
+.rocket-list {
+ font-size: 12px;
+	padding: 0;
+	padding-left: 10px;
+	font-weight: bold;
+	margin: 0;
+	background-color: rgba(220, 220, 220, .6);
+	width: 55%;
+    list-style-type: none;
+}
