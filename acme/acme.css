@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 #body{  
-	background-image: url(../images/site/background.jpg);
+	background-image: url(/images/site/background.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family:'Permanent Marker', cursive;
