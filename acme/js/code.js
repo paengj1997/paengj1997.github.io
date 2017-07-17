@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
 
     var jsonData;
@@ -49,7 +48,7 @@ $(document).ready(function () {
             $("title").text("ACME " + pageName);
             $("#prodtitle").html(name);
             $("#product-name").text(name);
-            $("#prod-image").css("background-image", "url(" + path + ")");
+             $("#product-image").html("<img src=" + path + ">");
             var output = '';
             output += "<li>" + description + "</li> <br>";
             output += '<li><strong>Made by: </strong>' + manufacturer + '</li>' + '<br>';
@@ -61,48 +60,3 @@ $(document).ready(function () {
 
     });
 })
-
-
-
-
-//var page;
-//$("#navlist").on("click", "a", function (evt) {
-//    evt.preventDefault();
-//    //    $()
-//    // With the text value get the needed value from the weather.json file
-//     page = $(this).text(); // Franklin, etc...
-//    console.log(page);
-//    index = $(this).index("a");
-//
-//    //    //    getData(returned.RESULTS[index].zmw);
-//    //    getData(index.lat, index.lon);
-//
-//    if (page == "Home") {
-//        $('#maincontent').show();
-//    } else {
-//        $('#maincontent').hide();
-//    }
-//});
-//
-//function getInfo(){
-//    $ ajax ({
-//        url: '/js/acme.json',
-//        dataType: "json",
-//        success: function (data){
-//            console.log (data)
-//            var maintext = data.page.description;
-//            $('#description').text(maintext);
-//
-//            var manufacturer = data.page.manufacturer;
-//            $('#manufacturer').text(manufacturer);
-//
-//            var reviews = data.page.reviews;
-//            $('#reviews').text(reviews);
-//
-//            var price = data.page.price;
-//            $('#price') = data.page.price;
-//        }
-//    })
-//}
-//
-//

@@ -9,11 +9,14 @@
 }
 
 #page {
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family:  'Fresca', sans-serif;
-    font-size: 15px;
-    width: 95%;
+   display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin: 3%;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 80%;
 }
 
 #acmewel {
