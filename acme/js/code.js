@@ -49,7 +49,7 @@ $(document).ready(function () {
             $("#produect_title").html(name);
             $("#product_name").text(name);
 //           $("#product_image").html("background-image", "url(" + path + ")");
-            $("#product_image").html("<img src=" + path + ">");
+            $("#prod_image").html("<img src=" + path + ">");
             var output = '';
             output += "<li>" + description + "</li> <br>";
             output += '<li><strong>Made by: </strong>' + manufacturer + '</li>' + '<br>';
